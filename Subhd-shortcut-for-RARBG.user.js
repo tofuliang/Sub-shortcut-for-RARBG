@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         Subhd for RARBG
 // @namespace    http://rarbg.to/
-// @version      0.1
+// @version      0.2
 // @description  Adds Subhd shortcut to RARBG.to
 // @author       tofuliang
 // @match        https://rarbg.to/*
 // @match        http://rarbg.to/*
+// @match        https://rarbg.is/*
+// @match        http://rarbg.is/*
 // ==/UserScript==
 
 $(document).on('ready AutoPagerize_DOMNodeInserted', function(e) {
