@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Subhd,Zimuku for RARBG
 // @namespace    http://rarbg.to/
-// @version      0.3
+// @version      0.3.1
 // @description  Adds Subhd,Zimuku shortcut to RARBG.to
 // @author       tofuliang
 // @match        https://rarbg.to/*
@@ -24,7 +24,7 @@ $(document).on('ready AutoPagerize_DOMNodeInserted', function(e) {
 		var keyword = parts.join('.'),
 			subhdUrl='http://subhd.com/search/'+keyword,
 			zimuzuUrl='http://www.zimuku.net/search?q='+keyword;
-		$(this).after('<a style="margin-left:5px;" href='+subhdUrl+' target="_blank" onmouseover="return overlib(\'<span>去subhd找字幕</span>\')" onmouseout="return nd();"><img src="http://subhd.com/images/favicon-32x32.png" style="height:18px;"></img></a><a style="margin-left:5px;" href='+zimuzuUrl+' target="_blank" onmouseover="return overlib(\'<span>去zimuzu找字幕</span>\')" onmouseout="return nd();"><img src="http://www.zimuku.net/images/v2/search.png" style="height:18px;"></img></a>');
+		$(this).after('<a style="margin-left:5px;" href='+subhdUrl+' target="_blank" onmouseover="return overlib(\'<span>去subhd找字幕</span>\')" onmouseout="return nd();"><img src="https://ooo.0o0.ooo/2017/06/20/59489583ed652.png" style="height:18px;"></img></a><a style="margin-left:5px;" href='+zimuzuUrl+' target="_blank" onmouseover="return overlib(\'<span>去zimuzu找字幕</span>\')" onmouseout="return nd();"><img src="https://ooo.0o0.ooo/2017/06/20/59489583ed94e.png" style="height:18px;"></img></a>');
 		$(this).attr('subed','subed');
 	});
 });
