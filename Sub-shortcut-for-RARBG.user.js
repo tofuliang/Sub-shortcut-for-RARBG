@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Subhd,Zimuku for RARBG
 // @namespace    http://rarbg.to/
-// @version      0.3.4
+// @version      0.3.5
 // @description  Adds Subhd,Zimuku shortcut to RARBG.to
 // @author       tofuliang
 // @match        https://rarbg.to/*
@@ -12,6 +12,8 @@
 // @match        http://rarbgprx.org/*
 // @match        https://proxyrarbg.org/*
 // @match        http://proxyrarbg.org/*
+// @match        http://rarbggo.org/*
+// @match        https://rarbggo.org/*
 // ==/UserScript==
 
 $(document).on('ready AutoPagerize_DOMNodeInserted', function(e) {
