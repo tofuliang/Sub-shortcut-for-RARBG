@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Subhd,Zimuku for RARBG
 // @namespace    http://rarbg.to/
-// @version      0.3.5
+// @version      0.3.6
 // @description  Adds Subhd,Zimuku shortcut to RARBG.to
 // @author       tofuliang
 // @match        https://rarbg.to/*
@@ -32,7 +32,7 @@ $(document).on('ready AutoPagerize_DOMNodeInserted', function(e) {
             parts.push(part);
             var keyword = parts.join('.'),
                 subhdUrl='http://subhd.tv/search/'+keyword,
-                zimuzuUrl='http://www.zimuku.la/search?q='+keyword;
+                zimuzuUrl='http://zmk.pw/search?q='+keyword;
             $(this).after('<a style="margin-left:5px;" href='+subhdUrl+' target="_blank" onmouseover="return overlib(\'<span>去subhd找字幕</span>\')" onmouseout="return nd();"><img src="'+subhdIcon+'" style="height:18px;"></img></a><a style="margin-left:5px;" href='+zimuzuUrl+' target="_blank" onmouseover="return overlib(\'<span>去zimuku找字幕</span>\')" onmouseout="return nd();"><img src="'+zimukuIcon+'" style="height:18px;"></img></a>');
             $(this).attr('subed','subed');
         }
